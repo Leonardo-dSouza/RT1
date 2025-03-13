@@ -1,15 +1,14 @@
-type Telefone1 = {
-    ddd: string
-    numero: string
-}
 
-let tel: Telefone1 ={
-    ddd: '12',
-    numero: '1212121'
-}
+import Empresa from "./empresa";
+import Endereco from "./endereco";
+import Funcionario from "./funcionario";
+import Telefone from "./telefone";
 
-let mensagem = (informacao: Telefone1): string =>{
-    return `ddd: ${informacao.ddd} numero: ${informacao.numero}`
-}
+let endereco = new Endereco('av paulista', 213, 'jardim paulista', 'sao pauo')
+let telefone = new Telefone('12', '0-00000-0000')
+let funcionario = new Funcionario('joao', '213123131', '2402742983-34', endereco, telefone)
+let funcionarios = [funcionario]
+let telefones = [telefone]
+let empresa = new Empresa( 'abc ltda', 'mercado online', '234342342424', endereco, funcionarios, telefones)
 
-console.log(mensagem(tel))
+// let descritor = new 
