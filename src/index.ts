@@ -1,4 +1,4 @@
-
+// import Descritor from "./descritorEmpresa";
 import Empresa from "./empresa";
 import Endereco from "./endereco";
 import Funcionario from "./funcionario";
@@ -11,4 +11,5 @@ let funcionarios = [funcionario]
 let telefones = [telefone]
 let empresa = new Empresa( 'abc ltda', 'mercado online', '234342342424', endereco, funcionarios, telefones)
 
-// let descritor = new 
+// let descritor = new Descritor
+// console.log(descritor.descritor(empresa))

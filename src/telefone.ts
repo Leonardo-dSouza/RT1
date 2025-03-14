@@ -6,4 +6,8 @@ export default class Telefone{
         this.ddd = ddd
         this.numero = numero
     }
+
+    public toString(){
+        return `(${this.ddd}) ${this.numero}`
+    }
 }

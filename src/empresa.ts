@@ -20,7 +20,28 @@ export default class Empresa{
         this.telefones = telefones
     }
 
+    get getRazaoSocial(){
+        return this.razaoSocial
+    }
 
+    get getNomeFantasia(){
+        return this.nomeFantasia
+    }
 
+    get getCnpj(){
+        return this.cnpj
+    }
+
+    get getEndereco(){
+        return this.endereco
+    }
+
+    get getFuncionarios(){
+        return this.funcionarios.slice()
+    }
+
+    get getTelefones(){
+        return this.telefones.slice()
+    }
 
 }
